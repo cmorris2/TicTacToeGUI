@@ -1,6 +1,9 @@
 package edu.jsu.mcis;
+import javax.swing.JFrame;
+import javax.swing.SwingUtilities;
+import javax.swing.*;
 
-public class TicTacToe {
+public class TicTacToe extends JFrame {
 
 
 

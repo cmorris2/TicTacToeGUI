@@ -1,25 +1,29 @@
 package edu.jsu.mcis;
 
+import javax.swing.JOptionPane;
+
 
 public class TicTacToeController {
     public TicTacToeController(TicTacToeVIEW view, TicTacToeModel model){
-        while (!model.CheckForWinner() && !model.checkForTie()){
-        view.xMove();
-        while ((!model.SpaceIsAvailable(view.row, view.col))){
-        view.xMove();
-    }
-        model.PlaceX(view.row, view.col);
-        view.showBoard();
-        if (model.CheckForWinner() || model.checkForTie()){
-            return;
+		while ((view.count<9) && (!model.CheckForWinner())){
+		for (int i = 0; i < 9; i++){
+                if (view.button[i].getText().equals("X")){
+					model.PlaceX(i);
+					if (model.CheckForWinner()){
+						JOptionPane.showMessageDialog(null, "X wins!");
+						return;
+					}
+				}
+				if (view.button[i].getText().equals("O")){
+					model.PlaceO(i);
+					if (model.CheckForWinner()){
+						JOptionPane.showMessageDialog(null, "O wins!");
+						return;
+					}
+				}
         }
-        
-        view.oMove();
-        while ((!model.SpaceIsAvailable(view.row, view.col))){
-            view.oMove();
-        }
-        model.PlaceO(view.row, view.col);
-        view.showBoard();
-        }
+		}
+		JOptionPane.showMessageDialog(null, "It's a tie!");
+    
     }
 }

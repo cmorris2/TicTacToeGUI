@@ -15,14 +15,64 @@ public class TicTacToeModel {
             }
         }
     }
-    public int PlaceX(int xRow, int xColumn){
-        board[xRow][xColumn] = X;
-        return board[xRow][xColumn];
+    public void PlaceX(int buttonNumber){
+        if (buttonNumber == 0){
+			board[0][0] = X;
+		}
+		if (buttonNumber == 1){
+			board[0][1] = X;
+		}
+		if (buttonNumber == 2){
+			board[0][2] = X;
+		}
+		if (buttonNumber == 3){
+			board[1][0] = X;
+		}
+		if (buttonNumber == 4){
+			board[1][1] = X;
+		}
+		if (buttonNumber == 5){
+			board[1][2] = X;
+		}
+		if (buttonNumber == 6){
+			board[2][0] = X;
+		}
+		if (buttonNumber == 7){
+			board[2][1] = X;
+		}	
+		if (buttonNumber == 8){
+			board[2][2] = X;
+		}
     }
 	
-	public int PlaceO(int oRow, int oColumn){
-		board[oRow][oColumn] = O;
-		return board[oRow][oColumn];
+	public void PlaceO(int buttonNumber){
+		if (buttonNumber == 0){
+			board[0][0] = O;
+		}
+		if (buttonNumber == 1){
+			board[0][1] = O;
+		}
+		if (buttonNumber == 2){
+			board[0][2] = O;
+		}
+		if (buttonNumber == 3){
+			board[1][0] = O;
+		}
+		if (buttonNumber == 4){
+			board[1][1] = O;
+		}
+		if (buttonNumber == 5){
+			board[1][2] = O;
+		}
+		if (buttonNumber == 6){
+			board[2][0] = O;
+		}
+		if (buttonNumber == 7){
+			board[2][1] = O;
+		}	
+		if (buttonNumber == 8){
+			board[2][2] = O;
+		}
 	}
     
     public boolean SpaceIsAvailable(int row, int column){
