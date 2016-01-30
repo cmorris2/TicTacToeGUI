@@ -21,7 +21,7 @@ public class TicTacToeTest {
 	
 	@Test
 	public void testMarkOInBottomLeftCorner() {
-		assertTrue(model.PlaceO(2,0)==0);
+		assertTrue(model.PlaceO(2,0)==2);
 	}
 	
 	@Test
