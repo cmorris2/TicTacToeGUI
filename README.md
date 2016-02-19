@@ -2,9 +2,12 @@
 Tic Tac Toe
 ===========
 
-This project provides a terminal-based Tic Tac Toe game. The files here
-are simply placeholders with ideas of where you might start. In the
-end, your program must pass the acceptance tests in TicTacToeTests.txt.
+This project provides a Tic Tac Toe game. Two players take turns marking a 
+spot on the board as either an X or an O. The objective of the game is to get
+three X's or three O's in a row. You can do so either horizontally, vertically,
+or diagonally.
+
+
 =======
 "# Individual-Project-One" 
 # Individual-Project-One
