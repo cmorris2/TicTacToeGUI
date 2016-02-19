@@ -1,6 +1,8 @@
 <<<<<<< HEAD
 Tic Tac Toe
 ===========
+Name:       Colby Morris
+Email:      Ccolbymorris@gmail.com
 
 ********************PURPOSE*********************
 This project provides a game of Tic Tac Toe. Two players take turns marking a 
