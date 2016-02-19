@@ -13,11 +13,14 @@ all of the spaces become occupied and neither player has three marks in a row,
 it is a tie game.
 
 *****************IMPLEMENTATION*****************
-In order to execute the program from the command line, simply navigate to the
-directory in which the project is located. Once you are there you must first 
-compile the project. This can be achived by using the javac command. Next, the
-program can be executed by using the "java" command followed by the name of the
-main class TicTacToe.java. You may have to also include the classpath.
+Included in this repository is source code for the program and test files for
+testing the program for usability. To view the source code, click on the "src" folder
+and then the "main/java/edu/jsu/mcis" folder. In order to execute the program from the
+command line, simply navigate to the directory in which the project is located. 
+Once you are there you must first compile the project. This can be achived by 
+using the javac command. Next, the program can be executed by using the "java" 
+command followed by the name of the main class TicTacToe.java. You may have to
+also include the classpath.
 
 *******************LIBRARIES********************
 This program consists of four different classes. The main class is 
